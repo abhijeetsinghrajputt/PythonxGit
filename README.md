@@ -1,10 +1,13 @@
 # PythonxGit
-def multiply(x, y):
-    return x * y
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+num1 = float(input("Enter the numerator: "))
+num2 = float(input("Enter the denominator: "))
 
-result = multiply(num1, num2)
-print("The product of", num1, "and", num2, "is", result)
+result = divide(num1, num2)
+print("The result of the division is:", result)
 
